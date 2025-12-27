@@ -4,7 +4,16 @@ import TypewriterText from "./TypewriterText";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
-  const roles = ["DevOps Engineer", "Cloud Engineer", "Cloud Enthusiast", "Tech Explorer"];
+  const roles= [
+  "DevOps Engineer",
+  "Cloud & AWS Engineer",
+  "CI/CD Pipeline Specialist",
+  "Docker & Kubernetes Practitioner",
+  "Infrastructure as Code (Terraform)",
+  "Monitoring & ELK Stack Engineer",
+  "Site Reliability Enthusiast",
+  "Automation & Cloud Security"
+];
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
