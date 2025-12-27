@@ -4,7 +4,7 @@ import TypewriterText from "./TypewriterText";
 import { Button } from "./ui/button";
 
 const HeroSection = () => {
-  const roles = ["DevOps Engineer", "Full Stack Developer", "Cloud Enthusiast", "Tech Explorer"];
+  const roles = ["DevOps Engineer", "Cloud Engineer", "Cloud Enthusiast", "Tech Explorer"];
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
