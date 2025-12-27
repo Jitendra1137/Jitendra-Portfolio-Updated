@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-secondary/5" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-20">
           {/* Profile Orbit */}
@@ -31,18 +31,25 @@ const HeroSection = () => {
               <TypewriterText texts={roles} />
             </div>
             <p className="text-muted-foreground mb-8 leading-relaxed animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              Passionate about building scalable infrastructure, automating deployments, 
+              Passionate about building scalable infrastructure, automating deployments,
               and creating seamless CI/CD pipelines with modern DevOps practices.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button className="group glow-primary" size="lg">
                 <Briefcase className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
-                View Experience
+                <a href="#experience">View Experience</a>
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/50 hover:bg-primary/10">
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-primary/50 text-white"
+                asChild
+              >
+                <a href="/Jitendra_Kumar_Jat_Resume.pdf" download>
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
+                </a>
               </Button>
             </div>
           </div>

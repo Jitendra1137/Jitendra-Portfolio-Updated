@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import DevOpsWorkflow from "@/components/DevOpsWorkflow";
 import ExperienceSection from "@/components/ExperienceSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import ContactSection from "@/components/ContactSection";
@@ -13,6 +14,7 @@ const Index = () => {
       <div className="relative z-10">
         <Navbar />
         <HeroSection />
+        <DevOpsWorkflow />
         <ExperienceSection />
         <CertificationsSection />
         <ContactSection />

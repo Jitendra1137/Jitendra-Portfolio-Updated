@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
+import { link } from "fs";
 
 const certifications = [
   {
@@ -8,12 +9,16 @@ const certifications = [
     issuer: "Internshala Trainings",
     issuedDate: "Oct 2023",
     credentialId: "h1me33jmpn2",
+    link:"https://trainings.internshala.com/s/v/3170364/7c58ff5b"
+
   },
   {
     title: "Front-End Web Development",
     issuer: "Internshala Trainings",
     issuedDate: "Aug 2023",
     credentialId: "dj1bfy63fp4",
+    link:"https://trainings.internshala.com/view_certificate/4lh837bz21u/dj1bfy63fp4/"
+
   },
 ];
 
@@ -66,7 +71,9 @@ const CertificationsSection = () => {
                 <p className="text-muted-foreground/70 text-xs mb-4">Credential ID: {cert.credentialId}</p>
                 <Button variant="outline" size="sm" className="border-primary/50 hover:bg-primary/10">
                   <ExternalLink className="mr-2 h-3 w-3" />
-                  Show Credential
+                  <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                    Show Credential
+                  </a>
                 </Button>
               </CardContent>
             </Card>
